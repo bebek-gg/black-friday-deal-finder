@@ -5,7 +5,7 @@
 [![Reward](https://make.fun/badge/black-friday-deal-finder-01/bebek-gg/black-friday-deal-finder/reward.svg)](https://make.fun/bounty/black-friday-deal-finder-01)
 
 A static deal-finder site of real Black Friday and Cyber Monday deals,
-checked by hand on 27 Nov 2026. 27 deals at Amazon, Best Buy and Walmart,
+checked by hand on 27 Nov 2026. 26 deals at Amazon, Best Buy and Walmart,
 each with its product, store, store link, sale price, usual price,
 discount, check time and source — plus an honest verdict (NEW LOW,
 STRONG PRICE, ROUTINE SALE or INFLATED) with the evidence behind it.
@@ -26,6 +26,12 @@ in a deals source naming the store (Slickdeals, DealNews, Gizmodo,
 Pickoryx, 9to5Google and others). Discounts are computed from the two
 prices shown, so they always add up. Two prices that could not be
 verified were left out entirely.
+
+On 27 Nov the prices were matched again against live sources: the Xbox
+Wireless Controller Ice Breaker Edition had been listed at $49, but that
+Amazon price had ended (live price $64.99, the average price — no deal),
+so the deal was removed. The REOLINK Duo 3 PoE was corrected to $137.99
+and the MacBook Air M5 to $999.99, the exact live prices.
 
 ## Run it
 

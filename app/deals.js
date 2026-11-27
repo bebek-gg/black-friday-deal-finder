@@ -32,7 +32,7 @@ export const DEALS = [
     product: "Apple MacBook Air 13-inch, M5, 16GB / 512GB",
     store: "Amazon",
     category: "Laptops",
-    sale: 999,
+    sale: 999.99,
     usual: 1299,
     url: "https://www.amazon.com/dp/B0GR1493ZV",
     source: "Pickoryx Amazon price check",
@@ -343,20 +343,6 @@ export const DEALS = [
     compare: []
   },
   {
-    id: "xbox-ice-breaker",
-    product: "Microsoft Xbox Wireless Controller, Ice Breaker Edition",
-    store: "Amazon",
-    category: "Gaming",
-    sale: 49,
-    usual: 79.99,
-    url: "https://www.amazon.com/dp/B0FLLXHPM9",
-    source: "Slickdeals",
-    sourceUrl: "https://slickdeals.net/sh/thread-20353212/e/3/c/deal-details/au/0071faa0e78111f1b221161ca257c495/",
-    verdict: "STRONG PRICE",
-    evidence: "39% off; $49 at Amazon since 19 Nov per Slickdeals and 9to5Toys.",
-    compare: []
-  },
-  {
     id: "dji-osmo-action-4",
     product: "DJI Osmo Action 4 Essential Combo",
     store: "Amazon",
@@ -375,7 +361,7 @@ export const DEALS = [
     product: "REOLINK Duo 3 PoE 16MP Dual-Lens Security Camera",
     store: "Amazon",
     category: "Smart Home",
-    sale: 137,
+    sale: 137.99,
     usual: 229.99,
     url: "https://www.amazon.com/dp/B0CM39K7CB",
     source: "Gizmodo",
