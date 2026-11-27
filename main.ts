@@ -5,11 +5,10 @@
 // Nothing it runs, styles or shows loads over the network; each deal
 // links out to its store with a plain <a href>. This program copies
 // app/ and screenshots/ from beside this file to /output and writes
-// /output/dossier.json, the summary the judge reads (the screenshots,
-// the first load's files and bytes, and the source), with the vendored
-// make.fun library. Leave vendor/makefun-frontend.ts as it is: the
-// scorer requires dossier.json to be byte for byte what its own copy
-// writes.
+// /output/dossier.json, the summary file (the screenshots, the first
+// load's files and bytes, and the source), with the vendored make.fun
+// library. Leave vendor/makefun-frontend.ts as it is: the scorer
+// requires dossier.json to be byte for byte what its own copy writes.
 //
 // Serve the site locally with any static server, e.g.
 //   cd app && python3 -m http.server 8080
@@ -33,7 +32,7 @@ mkdirSync(join(out, 'screenshots'), { recursive: true });
 if (existsSync(join(here, 'screenshots'))) cpSync(join(here, 'screenshots'), join(out, 'screenshots'), { recursive: true });
 
 // Refuse a hand-in with no entry page: a missing index.html would hand
-// the judge an empty site, so fail here instead of writing a dossier.
+// in an empty site, so fail here instead of writing a dossier.
 if (!existsSync(join(out, 'app', 'index.html'))) {
   throw new Error('app/index.html is missing; refusing to write a dossier for an empty site');
 }
