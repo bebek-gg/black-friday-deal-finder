@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bargain Beacon — Real Black Friday Deals, Checked Today</title>
+<meta name="description" content="Black Friday and Cyber Monday deals checked by hand on 27 Nov 2026: real prices at Amazon, Best Buy and Walmart, with an honest verdict on each one.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap">
+    <p class="brand"><span class="beacon" aria-hidden="true">&#9679;</span> Bargain Beacon</p>
+    <h1>Real Black Friday deals, checked today.</h1>
+    <p class="lede">Every price below was read on 27 Nov 2026 at the store or in a deals source naming the store. Discounts are computed from the two prices shown. Prices change — check the store before you buy.</p>
+    <p class="counts" id="count-line">27 verified deals &middot; checked 27 Nov 2026</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="controls" aria-label="Search and filter deals">
+    <label class="field field-search">
+      <span>Search</span>
+      <input id="search" type="search" placeholder="Product or store&hellip;" autocomplete="off">
+    </label>
+    <label class="field">
+      <span>Category</span>
+      <select id="category">
+        <option value="All">All categories</option>
+      </select>
+    </label>
+    <label class="field">
+      <span>Store</span>
+      <select id="store">
+        <option value="All">All stores</option>
+      </select>
+    </label>
+    <label class="field">
+      <span>Minimum discount</span>
+      <select id="min-discount">
+        <option value="0">Any discount</option>
+        <option value="20">20% or more</option>
+        <option value="40">40% or more</option>
+        <option value="50">50% or more</option>
+      </select>
+    </label>
+    <label class="field">
+      <span>Sort by</span>
+      <select id="sort">
+        <option value="verdict">Best verdict first</option>
+        <option value="discount">Biggest discount</option>
+        <option value="price">Lowest price</option>
+        <option value="saving">Biggest saving</option>
+      </select>
+    </label>
+  </section>
+
+  <p class="empty" id="empty" hidden>No deals match those filters. Try clearing the search or lowering the minimum discount.</p>
+
+  <section class="grid" id="grid" aria-live="polite"></section>
+
+  <section class="detail" id="detail" hidden></section>
+</main>
+
+<footer class="wrap foot">
+  <p><strong>How the verdicts work.</strong> NEW LOW means the lowest price tracked for that product. STRONG PRICE means a deep, genuine cut. ROUTINE SALE means a small cut, or a price seen before. INFLATED means the "sale" price is no better than the usual one. Each deal page shows the evidence.</p>
+  <p>Bargain Beacon is an independent deal finder and is not affiliated with Amazon, Best Buy, Walmart or any store named here. Prices in US dollars, read 27 Nov 2026.</p>
+</footer>
+
+<script type="module" src="./app.js"></script>
+</body>
+</html>
